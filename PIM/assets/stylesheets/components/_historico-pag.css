@@ -1,0 +1,59 @@
+.payment-history {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.payment-history-title {
+  color: #000000;
+  font-family: 'Calibri', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+
+.payment-history-contains {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-history-list {
+  list-style: none;
+  margin-left: 50px;
+}
+
+.payment-history-list-item {
+}
+
+.payment-history-item-link {
+  background-color: #fff;
+  height: 60px;
+  width: 800px;
+  border-radius: 12px;
+  border: #000000 1px solid;
+  color: #000000;
+  font-family: 'Calibri', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.tem-link-date {
+  border-right: #000000;
+}
+.tem-link-name {
+}
+.tem-link-value {
+}

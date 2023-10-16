@@ -1,0 +1,58 @@
+.header-container {
+  background-image: url('../../images/barra-cima.png');
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.header-logo {
+  height: 70px;
+  padding-right: 15px;
+}
+
+.header-title {
+  color: #000000;
+  font-family: 'Squarely', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+
+.menu {
+  height: 60px;
+  background-color: #000000;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.menu-item-link {
+  display: flex;
+  align-self: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+.menu-item-img {
+  height: 35px;
+}
+
+.menu-item-link p {
+  color: #fff;
+  font-family: 'Calibri', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.625rem;
+  letter-spacing: 2px;
+  padding-left: 10px;
+  padding-top: 7px;
+}

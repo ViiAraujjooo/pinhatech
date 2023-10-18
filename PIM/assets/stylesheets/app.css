@@ -2,12 +2,16 @@
 @import "base/_squarely.css";
 
 @import "components/_bater-ponto.css";
+@import "components/_beneficios.css";
 @import "components/_cadastro-dados.css";
 @import "components/_cadastro-dep.css";
+@import "components/_ferias.css";
+@import "components/_folha-ponto.css";
 @import "components/_header.css";
 @import "components/_historico-pag.css";
 @import "components/_home-page.css";
 @import "components/_informe-rend.css";
 @import "components/_login.css";
+@import "components/_manual.css";
 @import "components/_menu-opcoes.css";
 @import "components/_title.css";

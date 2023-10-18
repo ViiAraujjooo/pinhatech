@@ -1,5 +1,5 @@
 .header-container {
-  background-image: url('../../images/barra-cima.png');
+  background-image: url("../../images/barra-cima.png");
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -14,8 +14,8 @@
 }
 
 .header-title {
-  color: #000000;
-  font-family: 'Squarely', sans-serif;
+  color: #000;
+  font-family: "Squarely", sans-serif;
   font-size: 60px;
   font-weight: 700;
   line-height: 40px;
@@ -24,35 +24,86 @@
 
 .menu {
   height: 60px;
-  background-color: #000000;
+  background-color: #000;
 }
 
 .menu-list {
   display: flex;
+  height: inherit;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   list-style: none;
 }
 
-.menu-item-link {
-  display: flex;
-  align-self: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-}
-.menu-item-img {
-  height: 35px;
+.menu-list-item {
+  height: inherit;
 }
 
-.menu-item-link p {
+.menu-list-item .menu-item-link::before {
+  content: "";
+  width: 30px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 8px;
+}
+
+.menu-list-item:first-of-type .menu-item-link::before {
+  background-image: url("../../images/icn-opc.png");
+}
+
+.menu-list-item:first-of-type .menu-item-link:hover::before,
+.menu-list-item:first-of-type .menu-item-link.active::before {
+  background-image: url("../../images/icn-opc2.png");
+}
+
+.menu-list-item:nth-child(2) .menu-item-link::before {
+  background-image: url("../../images/icn-home.png");
+}
+
+.menu-list-item:nth-child(2) .menu-item-link:hover::before,
+.menu-list-item:nth-child(2) .menu-item-link.active::before {
+  background-image: url("../../images/icn-home2.png");
+}
+
+.menu-list-item:nth-child(3) .menu-item-link::before {
+  background-image: url("../../images/icn-pag.png");
+}
+
+.menu-list-item:nth-child(3) .menu-item-link:hover::before,
+.menu-list-item:nth-child(3) .menu-item-link.active::before {
+  background-image: url("../../images/icn-pag2.png");
+}
+
+.menu-list-item:last-of-type .menu-item-link::before {
+  background-image: url("../../images/icn-ajuda.png");
+}
+
+.menu-list-item:last-of-type .menu-item-link:hover::before,
+.menu-list-item:last-of-type .menu-item-link.active::before {
+  background-image: url("../../images/icn-ajuda2.png");
+}
+
+.menu-item-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  height: inherit;
   color: #fff;
-  font-family: 'Calibri', sans-serif;
-  font-size: 27px;
+  font-family: "Calibri", sans-serif;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.625rem;
+  line-height: 35px;
   letter-spacing: 2px;
-  padding-left: 10px;
-  padding-top: 7px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-item-link:hover,
+.menu-item-link.active {
+  background-color: #fff;
+  color: #000;
 }

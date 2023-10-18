@@ -7,8 +7,8 @@
 }
 
 .payment-history-title {
-  color: #000000;
-  font-family: 'Calibri', sans-serif;
+  color: #000;
+  font-family: "Calibri", sans-serif;
   font-size: 50px;
   font-weight: 700;
   line-height: 60px;
@@ -27,33 +27,38 @@
   margin-left: 50px;
 }
 
-.payment-history-list-item {
-}
-
 .payment-history-item-link {
-  background-color: #fff;
-  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   width: 800px;
+  height: 60px;
+  background-color: #fff;
   border-radius: 12px;
-  border: #000000 1px solid;
-  color: #000000;
-  font-family: 'Calibri', sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  font-family: "Calibri", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 35px;
   letter-spacing: 1px;
   text-align: center;
   text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   margin-bottom: 15px;
 }
-.tem-link-date {
-  border-right: #000000;
+
+.payment-history-item-link p {
+  display: inline-flex;
+  width: 33.3%;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+  color: #000;
 }
-.tem-link-name {
-}
-.tem-link-value {
+
+.payment-history-item-link p:nth-child(2) {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
 }

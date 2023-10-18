@@ -1,8 +1,8 @@
 .title {
-  color: #000000;
-  font-family: 'Calibri', sans-serif;
+  color: #000;
+  font-family: "Calibri", sans-serif;
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
-  letter-spacing: 1px;
+  text-transform: uppercase;
 }

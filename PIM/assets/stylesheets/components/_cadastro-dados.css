@@ -1,80 +1,90 @@
-.cadastro-dados {
+.register-data-section {
   margin: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
-.cadastro-contains {
+
+.register-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.nav-tabs {
+
+.register-nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  gap: 24px;
+  padding: 32px;
 }
 
-.nav {
-  background-color: #000000;
-  border-radius: 15px;
+.register-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: 70px;
   width: 250px;
+  background-color: #000;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
   color: #fff;
-  font-family: 'Calibri', sans-serif;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 35px;
-  letter-spacing: 1px;
   text-align: center;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 100px;
-  margin-bottom: 50px;
+  text-transform: uppercase;
 }
 
-.info-cadastro {
+.register-nav a.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.register-info {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
-  grid-row-gap: 10px;
+  grid-row-gap: 20px;
   list-style: none;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.info-cadastro-item {
-  color: #fff;
-  font-family: 'Calibri', sans-serif;
-  font-size: 25px;
+.register-info-item:first-of-type {
+  grid-column: 1/3;
+}
+
+.register-info-item:nth-child(4) {
+  grid-column: 1/3;
+}
+
+.register-info-item:nth-child(5) {
+  grid-column: 3/-1;
+}
+
+.register-info-item p {
+  display: inline-flex;
+  width: 100%;
+  font-family: "Calibri", sans-serif;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 35px;
-  letter-spacing: 1px;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-right: 20px;
+  text-transform: uppercase;
 }
 
-.text-1 {
-  color: #000000;
+.register-info-item p:first-child {
+  color: #000;
   padding-left: 20px;
 }
 
-.text-2 {
-  background-color: #000000;
-  height: 70px;
-  width: 300px;
-  border-radius: 15px;
-  border-style: none;
-  display: flex;
-  justify-content: flex-start;
+.register-info-item p:last-of-type {
   align-items: center;
+  justify-content: flex-start;
+  height: 70px;
+  background-color: #000;
+  border-radius: 15px;
+  color: #fff;
   padding-left: 20px;
 }

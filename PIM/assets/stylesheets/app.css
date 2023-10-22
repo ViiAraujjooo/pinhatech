@@ -1,7 +1,8 @@
 @import "base/_reset.css";
 @import "base/_squarely.css";
 
-@import "components/_bater-ponto.css";
+@import "components/_bater-ponto-entrada.css";
+@import "components/_bater-ponto-saida.css";
 @import "components/_beneficios.css";
 @import "components/_cadastro-dados.css";
 @import "components/_cadastro-dep.css";

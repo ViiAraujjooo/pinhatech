@@ -51,6 +51,7 @@
   padding-top: 20px;
   padding-right: 5px;
 }
+
 .set-hours-out {
   color: #fff;
   font-family: "Calibri", sans-serif;
@@ -67,6 +68,14 @@
   border: #fff 1px solid;
   padding-top: 20px;
 }
+
+.set-hours-out:hover,
+.set-hours-out.active {
+  background-color: #fff;
+  color: #000;
+  border-right-color: #000;
+}
+
 .set-hours-horario {
   color: #fff;
   font-family: "Calibri", sans-serif;
@@ -91,6 +100,7 @@
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border: #b22222 1px solid;
+  border-right-color: #000;
 }
 
 .set-hours-confirm {
@@ -107,4 +117,5 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border: #228b22 1px solid;
+  border-left-color: #000;
 }

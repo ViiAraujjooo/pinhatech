@@ -1,0 +1,109 @@
+.header-container {
+  background-image: url("../../../img/barra-cima.png");
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.header-logo {
+  height: 70px;
+  padding-right: 15px;
+}
+
+.header-title {
+  color: #000;
+  font-family: "Squarely", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+
+.menu {
+  height: 60px;
+  background-color: #000;
+}
+
+.menu-list {
+  display: flex;
+  height: inherit;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.menu-list-item {
+  height: inherit;
+}
+
+.menu-list-item .menu-item-link::before {
+  content: "";
+  width: 30px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 8px;
+}
+
+    .menu-list-item:first-of-type .menu-item-link::before {
+        background-image: url("../../../img/icn-opc.png");
+    }
+
+    .menu-list-item:first-of-type .menu-item-link:hover::before,
+    .menu-list-item:first-of-type .menu-item-link.active::before {
+        background-image: url("../../../img/icn-opc2.png");
+    }
+
+    .menu-list-item:nth-child(2) .menu-item-link::before {
+        background-image: url("../../../img/icn-home.png");
+    }
+
+    .menu-list-item:nth-child(2) .menu-item-link:hover::before,
+    .menu-list-item:nth-child(2) .menu-item-link.active::before {
+        background-image: url("../../../img/icn-home2.png");
+    }
+
+    .menu-list-item:nth-child(3) .menu-item-link::before {
+        background-image: url("../../../img/icn-pag.png");
+    }
+
+    .menu-list-item:nth-child(3) .menu-item-link:hover::before,
+    .menu-list-item:nth-child(3) .menu-item-link.active::before {
+        background-image: url("../../../img/icn-pag2.png");
+    }
+
+    .menu-list-item:last-of-type .menu-item-link::before {
+        background-image: url("../../../img/icn-ajuda.png");
+    }
+
+    .menu-list-item:last-of-type .menu-item-link:hover::before,
+    .menu-list-item:last-of-type .menu-item-link.active::before {
+        background-image: url("../../../img/icn-ajuda2.png");
+    }
+
+.menu-item-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  height: inherit;
+  color: #fff;
+  font-family: "Calibri", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-item-link:hover,
+.menu-item-link.active {
+  background-color: #fff;
+  color: #000;
+}

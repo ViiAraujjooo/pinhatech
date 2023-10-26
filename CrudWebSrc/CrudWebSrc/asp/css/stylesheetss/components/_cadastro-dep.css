@@ -1,0 +1,30 @@
+.register-dependents-section {
+  margin: 50px;
+}
+
+.dependents-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.dependents-info-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #000;
+  justify-content: center;
+  height: 200px;
+  width: 450px;
+  border-radius: 20px;
+  color: #fff;
+  font-family: "Calibri", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  flex-direction: column;
+  padding-left: 20px;
+}

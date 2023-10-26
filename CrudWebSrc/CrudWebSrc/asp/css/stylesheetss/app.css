@@ -1,0 +1,18 @@
+@import "../stylesheetss/base/_reset.css";
+@import "../stylesheetss/base/_squarely.css";
+
+@import "../stylesheetss/components/_bater-ponto-entrada.css";
+@import "../stylesheetss/components/_bater-ponto-saida.css";
+@import "../stylesheetss/components/_beneficios.css";
+@import "../stylesheetss/components/_cadastro-dados.css";
+@import "../stylesheetss/components/_cadastro-dep.css";
+@import "../stylesheetss/components/_ferias.css";
+@import "../stylesheetss/components/_folha-ponto.css";
+@import "../stylesheetss/components/_header.css";
+@import "../stylesheetss/components/_historico-pag.css";
+@import "../stylesheetss/components/_home-page.css";
+@import "../stylesheetss/components/_informe-rend.css";
+@import "../stylesheetss/components/_login.css";
+@import "../stylesheetss/components/_manual.css";
+@import "../stylesheetss/components/_menu-opcoes.css";
+@import "../stylesheetss/components/_title.css";

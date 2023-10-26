@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="..\css\formato.css">
+<script type="text/javascript" src="..\js\validaEsqueci.js"></script>
+<script type="text/javascript" src="..\js\util.js"></script>
+<title>Sistema XPTO</title>
+</head>
+<body>
+<center>
+<p style="color: blue">Alterar Senha</p>
+<form name="fesqueci" action="../contacesso/login.html" onsubmit="return validarEsqueci()" method="post">
+  Fone: <input type="text" name="fone" maxlength="15" onkeyup="handlePhone(event)" value=""/><br>
+  Senha: <input type="password" name="senha" value=""><br>
+  <input type="submit" value="Submit">
+</form>
+</center>
+</body>
+</html>

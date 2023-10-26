@@ -1,0 +1,293 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{423F2118-AB15-4EE4-A5C6-8AF4ABD7F30C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CrudWeb</RootNamespace>
+    <AssemblyName>CrudWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44388</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="asp\contacesso\login.html" />
+    <Content Include="asp\contacesso\menu.aspx" />
+    <Content Include="asp\css\stylesheetss\app.css" />
+    <Content Include="asp\css\stylesheetss\base\_reset.css" />
+    <Content Include="asp\css\stylesheetss\base\_squarely.css" />
+    <Content Include="asp\css\stylesheetss\components\_bater-ponto-entrada.css" />
+    <Content Include="asp\css\stylesheetss\components\_bater-ponto-saida.css" />
+    <Content Include="asp\css\stylesheetss\components\_beneficios.css" />
+    <Content Include="asp\css\stylesheetss\components\_cadastro-dados.css" />
+    <Content Include="asp\css\stylesheetss\components\_cadastro-dep.css" />
+    <Content Include="asp\css\stylesheetss\components\_ferias.css" />
+    <Content Include="asp\css\stylesheetss\components\_folha-ponto.css" />
+    <Content Include="asp\css\stylesheetss\components\_header.css" />
+    <Content Include="asp\css\stylesheetss\components\_historico-pag.css" />
+    <Content Include="asp\css\stylesheetss\components\_home-page.css" />
+    <Content Include="asp\css\stylesheetss\components\_informe-rend.css" />
+    <Content Include="asp\css\stylesheetss\components\_login.css" />
+    <Content Include="asp\css\stylesheetss\components\_manual.css" />
+    <Content Include="asp\css\stylesheetss\components\_menu-opcoes.css" />
+    <Content Include="asp\css\stylesheetss\components\_title.css" />
+    <Content Include="asp\img\barra-cima.png" />
+    <Content Include="asp\img\bt-ajuda.png" />
+    <Content Include="asp\img\bt-ajuda2.png" />
+    <Content Include="asp\img\bt-bene.png" />
+    <Content Include="asp\img\bt-bene2.png" />
+    <Content Include="asp\img\bt-btr-ponto.png" />
+    <Content Include="asp\img\bt-btr-ponto2.png" />
+    <Content Include="asp\img\bt-cadastro.png" />
+    <Content Include="asp\img\bt-cadastro2.png" />
+    <Content Include="asp\img\bt-cancela.png" />
+    <Content Include="asp\img\bt-confirma.png" />
+    <Content Include="asp\img\bt-dados.png" />
+    <Content Include="asp\img\bt-dados2.png" />
+    <Content Include="asp\img\bt-dep.png" />
+    <Content Include="asp\img\bt-dep2.png" />
+    <Content Include="asp\img\bt-entrada.png" />
+    <Content Include="asp\img\bt-entrada2.png" />
+    <Content Include="asp\img\bt-ferias.png" />
+    <Content Include="asp\img\bt-ferias2.png" />
+    <Content Include="asp\img\bt-home.png" />
+    <Content Include="asp\img\bt-home2.png" />
+    <Content Include="asp\img\bt-login.png" />
+    <Content Include="asp\img\bt-login2.png" />
+    <Content Include="asp\img\bt-opc.png" />
+    <Content Include="asp\img\bt-opc2.png" />
+    <Content Include="asp\img\bt-pag.png" />
+    <Content Include="asp\img\bt-pag2.png" />
+    <Content Include="asp\img\bt-ponto.png" />
+    <Content Include="asp\img\bt-ponto2.png" />
+    <Content Include="asp\img\bt-rend.png" />
+    <Content Include="asp\img\bt-rend2.png" />
+    <Content Include="asp\img\bt-saida.png" />
+    <Content Include="asp\img\bt-saida2.png" />
+    <Content Include="asp\img\cx-login.png" />
+    <Content Include="asp\img\fundo original.png" />
+    <Content Include="asp\img\fundo.png" />
+    <Content Include="asp\img\icn-ajuda.png" />
+    <Content Include="asp\img\icn-ajuda2.png" />
+    <Content Include="asp\img\icn-ben.png" />
+    <Content Include="asp\img\icn-ben2.png" />
+    <Content Include="asp\img\icn-cadastro.png" />
+    <Content Include="asp\img\icn-cadastro2.png" />
+    <Content Include="asp\img\icn-fer.png" />
+    <Content Include="asp\img\icn-fer2.png" />
+    <Content Include="asp\img\icn-home.png" />
+    <Content Include="asp\img\icn-home2.png" />
+    <Content Include="asp\img\icn-opc.png" />
+    <Content Include="asp\img\icn-opc2.png" />
+    <Content Include="asp\img\icn-pag.png" />
+    <Content Include="asp\img\icn-pag2.png" />
+    <Content Include="asp\img\icn-ponto.png" />
+    <Content Include="asp\img\icn-ponto2.png" />
+    <Content Include="asp\img\icn-rend.png" />
+    <Content Include="asp\img\icn-rend2.png" />
+    <Content Include="asp\img\icn-usr.png" />
+    <Content Include="asp\img\link.png" />
+    <Content Include="asp\img\login-box.png" />
+    <Content Include="asp\img\login.jpg" />
+    <Content Include="asp\img\logo1.png" />
+    <Content Include="asp\img\logo2.png" />
+    <Content Include="asp\img\pdf.png" />
+    <Content Include="asp\img\senha-erro.png" />
+    <Content Include="asp\img\senha.png" />
+    <Content Include="asp\img\user-erro.png" />
+    <Content Include="asp\img\user.png" />
+    <Content Include="asp\js\util.js" />
+    <Content Include="asp\js\validaAlterar.js" />
+    <Content Include="asp\js\validaEsqueci.js" />
+    <Content Include="asp\js\validaExcluir.js" />
+    <Content Include="asp\js\validaInserir.js" />
+    <Content Include="asp\js\validaListar.js" />
+    <Content Include="asp\js\validaLogin.js" />
+    <Content Include="asp\telass\bater-ponto-entrada.html" />
+    <Content Include="asp\telass\bater-ponto-saida.html" />
+    <Content Include="asp\telass\beneficios.html" />
+    <Content Include="asp\telass\cadastro-dados.html" />
+    <Content Include="asp\telass\cadastro-dep.html" />
+    <Content Include="asp\telass\ferias.html" />
+    <Content Include="asp\telass\folha-ponto.html" />
+    <Content Include="asp\telass\historico-pag.html" />
+    <Content Include="asp\telass\index.html" />
+    <Content Include="asp\telass\informe-rend.html" />
+    <Content Include="asp\telass\login.html" />
+    <Content Include="asp\telass\manual.html" />
+    <Content Include="asp\telass\menu-opcoes.html" />
+    <Content Include="asp\usuario\esqueci.html" />
+    <Content Include="asp\usuario\excluir.html" />
+    <Content Include="asp\usuario\listar.html" />
+    <Content Include="asp\usuario\inserir.html" />
+    <Content Include="asp\usuario\validainserir.aspx" />
+    <Content Include="asp\usuario\retornolistar.aspx" />
+    <Content Include="asp\usuario\validaexcluir.aspx" />
+    <Content Include="asp\usuario\alterar.aspx" />
+    <Content Include="asp\usuario\validaalterar.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="index.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="asp\contacesso\menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\contacesso\menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\usuario\validainserir.aspx.cs">
+      <DependentUpon>validainserir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\usuario\validainserir.aspx.designer.cs">
+      <DependentUpon>validainserir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\usuario\retornolistar.aspx.cs">
+      <DependentUpon>retornolistar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\usuario\retornolistar.aspx.designer.cs">
+      <DependentUpon>retornolistar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\usuario\validaexcluir.aspx.cs">
+      <DependentUpon>validaexcluir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\usuario\validaexcluir.aspx.designer.cs">
+      <DependentUpon>validaexcluir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\usuario\alterar.aspx.cs">
+      <DependentUpon>alterar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\usuario\alterar.aspx.designer.cs">
+      <DependentUpon>alterar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\usuario\validaalterar.aspx.cs">
+      <DependentUpon>validaalterar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\usuario\validaalterar.aspx.designer.cs">
+      <DependentUpon>validaalterar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\controller\ControllerUsuario.cs" />
+    <Compile Include="src\model\bean\Usuario.cs" />
+    <Compile Include="src\model\dao\DaoUsuarioSqlServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="asp\fontes\squarely-webfont.ttf" />
+    <Content Include="asp\documentos\manual-usuario.pdf" />
+    <Content Include="asp\documentos\informe-de-rendimentos-MODELO2.pdf" />
+    <Content Include="asp\documentos\ponto.pdf" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57115</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44388/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

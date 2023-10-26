@@ -1,0 +1,64 @@
+.folha-ponto {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.folha-ponto-title {
+  color: #000;
+  font-family: "Calibri", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+
+.folha-ponto-contains {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.folha-ponto-list {
+  list-style: none;
+  margin-left: 150px;
+}
+
+.folha-ponto-item-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 800px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  font-family: "Calibri", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.folha-ponto-item-link p {
+  display: inline-flex;
+  width: 33.3%;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.folha-ponto-item-link p:nth-child(2) {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}

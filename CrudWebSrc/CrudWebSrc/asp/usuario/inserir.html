@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="..\css\formato.css">
+<script type="text/javascript" src="..\js\validaInserir.js"></script>
+<script type="text/javascript" src="..\js\util.js"></script>
+<title>Sistema XPTO</title>
+</head>
+<body>
+<center>
+<form name="finserir" action="../usuario/validainserir.aspx" onsubmit="return validarInserir()" method="post">
+  Login:  <input type="text" name="login" value="">
+  Senha:  <input type="password" name="senha" value="">
+  Status: <input type="text" name="status" value="">
+  Tipo:   <input type="text" name="tipo" value="">
+  <input type="submit" value="Submit">
+</form>
+</center>
+
+</body>
+</html>
